@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/install/setup.sh

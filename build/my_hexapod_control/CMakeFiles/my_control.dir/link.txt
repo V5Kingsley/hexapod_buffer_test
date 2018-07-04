@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++0x    -shared -Wl,-soname,libmy_control.so -o /home/quan/hexapod_buffer_ws/devel/lib/libmy_control.so CMakeFiles/my_control.dir/src/control.cpp.o 

@@ -1,0 +1,2 @@
+hexapod_buffer_test:my_hexapod_control
+-DCATKIN_DEVEL_PREFIX=/home/quan/hexapod_buffer_ws/devel -DCMAKE_INSTALL_PREFIX=/home/quan/hexapod_buffer_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/quan/hexapod_buffer_ws/devel
+
+Name: my_hexapod_control
+Description: Description of my_hexapod_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/quan/hexapod_buffer_ws/devel/lib 
+Requires: 

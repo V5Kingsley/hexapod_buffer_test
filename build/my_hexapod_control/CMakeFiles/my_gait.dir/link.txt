@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++0x    -shared -Wl,-soname,libmy_gait.so -o /home/quan/hexapod_buffer_ws/devel/lib/libmy_gait.so CMakeFiles/my_gait.dir/src/gait.cpp.o 

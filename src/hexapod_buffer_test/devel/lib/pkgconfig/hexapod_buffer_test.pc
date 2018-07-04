@@ -1,0 +1,8 @@
+prefix=/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/devel
+
+Name: hexapod_buffer_test
+Description: Description of hexapod_buffer_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/devel/lib 
+Requires: 
