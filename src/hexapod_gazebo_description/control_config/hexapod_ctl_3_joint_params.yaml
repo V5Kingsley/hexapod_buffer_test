@@ -30,11 +30,6 @@ hexapod:
     joint: leg1_pitch2
     pid: *pid
 
-  leg1_pitch3_joint_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: leg1_pitch3
-    pid: *pid
-
   # leg2 Position Controllers ---------------------------------------
   leg2_roll_joint_position_controller:
     type: effort_controllers/JointPositionController
@@ -49,11 +44,6 @@ hexapod:
   leg2_pitch2_joint_position_controller:
     type: effort_controllers/JointPositionController
     joint: leg2_pitch2
-    pid: *pid
-
-  leg2_pitch3_joint_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: leg2_pitch3
     pid: *pid
 
 
@@ -73,11 +63,6 @@ hexapod:
     joint: leg3_pitch2
     pid: *pid
 
-  leg3_pitch3_joint_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: leg3_pitch3
-    pid: *pid
-
 
   # leg4 Position Controllers ---------------------------------------
   leg4_roll_joint_position_controller:
@@ -93,11 +78,6 @@ hexapod:
   leg4_pitch2_joint_position_controller:
     type: effort_controllers/JointPositionController
     joint: leg4_pitch2
-    pid: *pid
-
-  leg4_pitch3_joint_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: leg4_pitch3
     pid: *pid
 
 
@@ -118,11 +98,6 @@ hexapod:
     joint: leg5_pitch2
     pid: *pid
 
-  leg5_pitch3_joint_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: leg5_pitch3
-    pid: *pid
-
 
   # leg6 Position Controllers ---------------------------------------
   leg6_roll_joint_position_controller:
@@ -138,11 +113,6 @@ hexapod:
   leg6_pitch2_joint_position_controller:
     type: effort_controllers/JointPositionController
     joint: leg6_pitch2
-    pid: *pid
-
-  leg6_pitch3_joint_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: leg6_pitch3
     pid: *pid
 
 

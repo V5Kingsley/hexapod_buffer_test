@@ -8,9 +8,6 @@
   <xacro:property name="bodylength" value="0.1000"/>
   <xacro:property name="bodymass" value="3"/>
 
-  <xacro:property name="bridgelength" value="0.01"/>
-  <xacro:property name="bridgeradius" value="0.03"/>  
-  <xacro:property name="bridgemass" value="0.5"/>
 
   <xacro:property name="rolllength" value="0.093"/>
   <xacro:property name="rollradius" value="0.03"/>  
@@ -89,43 +86,6 @@
 
   <xacro:macro name="leg" params="leg r p ry x y">
 
-<link name="${leg}_bridge">
-  <visual>
-    <origin xyz="${bridgelength/2} 0 0" rpy="0 ${M_PI/2} 0"/>
-    <geometry>
-      <cylinder length="${bridgelength}" radius="${bridgeradius}"/>
-    </geometry>
-    <material name="Black">
-      <color rgba="0 0 0 1"/>
-    </material>
-  </visual>
-  <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="${bridgemass}"/>
-      <inertia
-        ixx="0" ixy="0.0" ixz="0.0"
-        iyy="0" iyz="0.0"
-        izz="0"/>
-    </inertial>
-  <collision>
-    <origin xyz="${bridgelength/2} 0 0" rpy="0 ${M_PI/2} 0"/>
-    <geometry>
-      <cylinder length="${bridgelength}" radius="${bridgeradius}"/>
-    </geometry>
-  </collision>
-</link>
-  <gazebo reference="${leg}_bridge">
-    <material>Gazebo/Black</material>
-  </gazebo>
-
-<joint name="${leg}_bridge" type="fixed">
-  <axis xyz="0 0 1"/>
-  <parent link="body"/>
-  <child link="${leg}_bridge"/>
-  <origin rpy="${r} ${p} ${ry}" xyz="${x} ${y} 0"/>
-</joint>
-
-
 <link name="${leg}_roll">
   <visual>
     <origin xyz="${rolllength/2} 0 0" rpy="0 ${M_PI/2} 0"/>
@@ -159,9 +119,9 @@
   <axis xyz="0 0 1"/>
   <limit effort="300" lower="-${M_PI/4}" upper="${M_PI/4}" velocity="1"/>
   <dynamics damping="${damping}"/>
-  <parent link="${leg}_bridge"/>
+  <parent link="body"/>
   <child link="${leg}_roll"/>
-  <origin rpy="0 0 0" xyz="0 0 0"/>
+  <origin rpy="${r} ${p} ${ry}" xyz="${x} ${y} 0"/>
 </joint>
 
 
@@ -480,7 +440,7 @@
 
   <gazebo>
      <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
-       <jointName>${leg}_roll, ${leg}_pitch1, ${leg}_pitch2,${leg}_pitch3, ${leg}_stick1, ${leg}_stick3</jointName>
+       <jointName>${leg}_roll, ${leg}_pitch1, ${leg}_pitch2,${leg}_pitch3</jointName>
      </plugin>
   </gazebo>
 </xacro:macro>
@@ -496,9 +456,9 @@
 <xacro:leg leg="leg1" r="0" p="0" ry="${M_PI/6}" x="${bodyradius/2*gen3}" y="${bodyradius/2}"/>
 <xacro:leg leg="leg2" r="0" p="0" ry="${M_PI/2}" x="0" y="${bodyradius}"/>
 <xacro:leg leg="leg3" r="0" p="0" ry="${M_PI/6*5}" x="-${bodyradius/2*gen3}" y="${bodyradius/2}"/>
-<xacro:leg leg="leg4" r="0" p="0" ry="-${M_PI/6*5}" x="-${bodyradius/2*gen3}" y="-${bodyradius/2}"/>
+<xacro:leg leg="leg6" r="0" p="0" ry="-${M_PI/6*5}" x="-${bodyradius/2*gen3}" y="-${bodyradius/2}"/>
 <xacro:leg leg="leg5" r="0" p="0" ry="-${M_PI/2}" x="0" y="-${bodyradius}"/>
-<xacro:leg leg="leg6" r="0" p="0" ry="-${M_PI/6}" x="${bodyradius/2*gen3}" y="-${bodyradius/2}"/>
+<xacro:leg leg="leg4" r="0" p="0" ry="-${M_PI/6}" x="${bodyradius/2*gen3}" y="-${bodyradius/2}"/>
 
 
 
