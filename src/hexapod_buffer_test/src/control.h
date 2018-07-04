@@ -82,7 +82,7 @@ private:
   ros::Publisher feet_position;
   
   //simplemotion
-  BufferedMotionAxis axis[24];
+  BufferedMotionAxis axis[12];
   smbus bushandle;
 
   

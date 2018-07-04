@@ -206,90 +206,6 @@ ik/fast:
 .PHONY : ik/fast
 
 # Convenience name for target.
-hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make hexapod_buffer_test/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make hexapod_buffer_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 hexapod_buffer_test/CMakeFiles/simplemotion.dir/rule:
 	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/simplemotion.dir/rule
 .PHONY : hexapod_buffer_test/CMakeFiles/simplemotion.dir/rule
@@ -302,48 +218,6 @@ simplemotion: hexapod_buffer_test/CMakeFiles/simplemotion.dir/rule
 simplemotion/fast:
 	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/simplemotion.dir/build.make hexapod_buffer_test/CMakeFiles/simplemotion.dir/build
 .PHONY : simplemotion/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_py.dir/build.make hexapod_buffer_test/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
 
 src/control.o: src/control.cpp.o
 .PHONY : src/control.o
@@ -601,16 +475,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... simplemotion"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... src/control.o"
 	@echo "... src/control.i"

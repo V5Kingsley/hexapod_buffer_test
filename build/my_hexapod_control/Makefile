@@ -150,132 +150,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-my_hexapod_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_cpp: my_hexapod_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make my_hexapod_control/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_lisp: my_hexapod_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make my_hexapod_control/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_py: my_hexapod_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/actionlib_generate_messages_py.dir/build.make my_hexapod_control/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_cpp: my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_lisp: my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_py: my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make my_hexapod_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make my_hexapod_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 my_hexapod_control/CMakeFiles/my_control.dir/rule:
 	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/my_control.dir/rule
 .PHONY : my_hexapod_control/CMakeFiles/my_control.dir/rule
@@ -330,132 +204,6 @@ my_ik: my_hexapod_control/CMakeFiles/my_ik.dir/rule
 my_ik/fast:
 	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/my_ik.dir/build.make my_hexapod_control/CMakeFiles/my_ik.dir/build
 .PHONY : my_ik/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make my_hexapod_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make my_hexapod_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: my_hexapod_control/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/tf_generate_messages_cpp.dir/build.make my_hexapod_control/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: my_hexapod_control/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/tf_generate_messages_lisp.dir/build.make my_hexapod_control/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-my_hexapod_control/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_hexapod_control/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : my_hexapod_control/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: my_hexapod_control/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/quan/hexapod_buffer_ws/build && $(MAKE) -f my_hexapod_control/CMakeFiles/tf_generate_messages_py.dir/build.make my_hexapod_control/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
 
 src/control.o: src/control.cpp.o
 .PHONY : src/control.o
@@ -559,16 +307,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -578,16 +317,7 @@ help:
 	@echo "... my_hexapod_controller"
 	@echo "... my_ik"
 	@echo "... rebuild_cache"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_py"
 	@echo "... src/control.o"
 	@echo "... src/control.i"
 	@echo "... src/control.s"

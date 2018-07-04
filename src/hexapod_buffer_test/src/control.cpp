@@ -53,9 +53,9 @@ Control::Control()
   }
   
   //初始化总线
-  for(int i=0; i<24; i++)
+  for(int i=0; i<12; i++)
   {
-    smBufferedInit(&axis[i], bushandle, i+1, 600, SMP_ACTUAL_POSITION_FB, SM_RETURN_VALUE_16B);
+    smBufferedInit(&axis[i], bushandle, i+1, 250, SMP_ACTUAL_POSITION_FB, SM_RETURN_VALUE_16B);
 //     smSetParameter(bushandle,i+1,SMP_DRIVE_FLAGS,axis[i].driveFlagsBeforeInit&(0xfffff7ff));
   }
  
@@ -195,8 +195,8 @@ void Control::partitionCmd_vel( geometry_msgs::Twist *cmd_vel )
 
 void Control::feedDrives()
 {
-  smint32 positions[24][64];
-  smint32 readData[24][64];
+  smint32 positions[12][64];
+  smint32 readData[12][64];
   smint32 readDataAmount;
   smint32 freeSpace;
   int i, j;
@@ -222,7 +222,7 @@ void Control::feedDrives()
       ik.calculateIK( feet_, &legs_ );
       publishJointStates( legs_, gait.cycle_period_, gait.cycle_leg_number_, &feet_);
       
-      for (int leg_index=0; leg_index<NUMBER_OF_LEGS; leg_index++)
+      for (int leg_index=0; leg_index<3; leg_index++)
       {
 	positions[leg_index*4][j] = round(4096*(3005640.0/1300.0)*(legs_.leg[leg_index].coxa/M_PI*360)/360.0);
 	positions[leg_index*4+1][j] = round(4096*(3005640.0/1300.0)*(-legs_.leg[leg_index].femur/M_PI*360)/360.0);
@@ -234,7 +234,7 @@ void Control::feedDrives()
     
 //send to devies, and receive read data back
   smint32 bytesFilled;
-  for(i=0; i<24; i++)
+  for(i=0; i<12; i++)
   {
  /*   smint32 Temp;
     smAppendSMCommandToQueue(bushandle, SM_SET_WRITE_ADDRESS, SMP_TRAJ_PLANNER_VEL);

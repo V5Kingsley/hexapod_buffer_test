@@ -34,3 +34,6 @@ Project Target=hexapod_buffer_test,hexapodcontrol_buffer
 Use External Terminal=false
 Working Directory=
 isExecutable=false
+
+[Project]
+VersionControlSupport=kdevgit
