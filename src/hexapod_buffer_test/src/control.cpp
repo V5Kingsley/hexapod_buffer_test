@@ -55,7 +55,7 @@ Control::Control()
   //初始化总线
   for(int i=0; i<12; i++)
   {
-    smBufferedInit(&axis[i], bushandle, i+1, 250, SMP_ACTUAL_POSITION_FB, SM_RETURN_VALUE_16B);
+    smBufferedInit(&axis[i], bushandle, i+1, 300, SMP_ACTUAL_POSITION_FB, SM_RETURN_VALUE_16B);
 //     smSetParameter(bushandle,i+1,SMP_DRIVE_FLAGS,axis[i].driveFlagsBeforeInit&(0xfffff7ff));
   }
  
@@ -236,12 +236,12 @@ void Control::feedDrives()
   smint32 bytesFilled;
   for(i=0; i<12; i++)
   {
- /*   smint32 Temp;
+    smint32 Temp;
     smAppendSMCommandToQueue(bushandle, SM_SET_WRITE_ADDRESS, SMP_TRAJ_PLANNER_VEL);
     smAppendSMCommandToQueue(bushandle, SM_WRITE_VALUE_32B, 10000);
     smExecuteCommandQueue(bushandle, i+1);
     smGetQueuedSMCommandReturnValue(bushandle, &Temp);
-    smGetQueuedSMCommandReturnValue(bushandle, &Temp);*/
+    smGetQueuedSMCommandReturnValue(bushandle, &Temp);
     smBufferedFillAndReceive(&axis[i], maxpoints, positions[i], &readDataAmount, readData[i], &bytesFilled);
   }
   freeSpace -= bytesFilled;

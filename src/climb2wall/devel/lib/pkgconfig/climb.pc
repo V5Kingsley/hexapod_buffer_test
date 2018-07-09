@@ -1,0 +1,8 @@
+prefix=/home/quan/hexapod_buffer_ws/src/climb2wall/devel
+
+Name: climb
+Description: Description of climb
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/quan/hexapod_buffer_ws/src/climb2wall/devel/lib 
+Requires: 

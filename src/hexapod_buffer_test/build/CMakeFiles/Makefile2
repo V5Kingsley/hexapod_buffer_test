@@ -219,10 +219,10 @@ clean: CMakeFiles/gait.dir/clean
 # Target rules for target CMakeFiles/hexapodcontrol_buffer.dir
 
 # All Build rule for target.
-CMakeFiles/hexapodcontrol_buffer.dir/all: CMakeFiles/gait.dir/all
 CMakeFiles/hexapodcontrol_buffer.dir/all: CMakeFiles/control.dir/all
-CMakeFiles/hexapodcontrol_buffer.dir/all: CMakeFiles/ik.dir/all
 CMakeFiles/hexapodcontrol_buffer.dir/all: CMakeFiles/simplemotion.dir/all
+CMakeFiles/hexapodcontrol_buffer.dir/all: CMakeFiles/ik.dir/all
+CMakeFiles/hexapodcontrol_buffer.dir/all: CMakeFiles/gait.dir/all
 	$(MAKE) -f CMakeFiles/hexapodcontrol_buffer.dir/build.make CMakeFiles/hexapodcontrol_buffer.dir/depend
 	$(MAKE) -f CMakeFiles/hexapodcontrol_buffer.dir/build.make CMakeFiles/hexapodcontrol_buffer.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/build/CMakeFiles  5

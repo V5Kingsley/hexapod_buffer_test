@@ -592,6 +592,32 @@ tf_generate_messages_py/fast:
 .PHONY : tf_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named climb_test
+
+# Build rule for target.
+climb_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 climb_test
+.PHONY : climb_test
+
+# fast build rule for target.
+climb_test/fast:
+	$(MAKE) -f climb2wall/CMakeFiles/climb_test.dir/build.make climb2wall/CMakeFiles/climb_test.dir/build
+.PHONY : climb_test/fast
+
+#=============================================================================
+# Target rules for targets named climb_up
+
+# Build rule for target.
+climb_up: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 climb_up
+.PHONY : climb_up
+
+# fast build rule for target.
+climb_up/fast:
+	$(MAKE) -f climb2wall/CMakeFiles/climb_up.dir/build.make climb2wall/CMakeFiles/climb_up.dir/build
+.PHONY : climb_up/fast
+
+#=============================================================================
 # Target rules for targets named control
 
 # Build rule for target.
@@ -755,6 +781,8 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... climb_test"
+	@echo "... climb_up"
 	@echo "... control"
 	@echo "... gait"
 	@echo "... hexapodcontrol_buffer"

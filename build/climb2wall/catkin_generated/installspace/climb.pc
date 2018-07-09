@@ -1,0 +1,8 @@
+prefix=/home/quan/hexapod_buffer_ws/install
+
+Name: climb
+Description: Description of climb
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/quan/hexapod_buffer_ws/install/lib 
+Requires: 

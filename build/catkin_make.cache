@@ -1,2 +1,2 @@
-hexapod_buffer_test:hexapod_gazebo_description:my_hexapod_control
+climb2wall:hexapod_buffer_test:hexapod_gazebo_description:my_hexapod_control
 -DCATKIN_DEVEL_PREFIX=/home/quan/hexapod_buffer_ws/devel -DCMAKE_INSTALL_PREFIX=/home/quan/hexapod_buffer_ws/install -G Unix Makefiles

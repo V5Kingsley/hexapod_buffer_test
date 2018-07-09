@@ -118,6 +118,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/quan/hexapod_buffer_ws/build/gtest/cmake_install.cmake")
   INCLUDE("/home/quan/hexapod_buffer_ws/build/hexapod_gazebo_description/cmake_install.cmake")
+  INCLUDE("/home/quan/hexapod_buffer_ws/build/climb2wall/cmake_install.cmake")
   INCLUDE("/home/quan/hexapod_buffer_ws/build/hexapod_buffer_test/cmake_install.cmake")
   INCLUDE("/home/quan/hexapod_buffer_ws/build/my_hexapod_control/cmake_install.cmake")
 
