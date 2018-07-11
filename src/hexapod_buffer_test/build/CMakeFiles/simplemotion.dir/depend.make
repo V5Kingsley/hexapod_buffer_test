@@ -11,7 +11,6 @@ CMakeFiles/simplemotion.dir/src/simplemotion_library/bufferedmotion.c.o: ../src/
 
 CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o: ../src/simplemotion_library/busdevice.c
 CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o: ../src/simplemotion_library/busdevice.h
-CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o: ../src/simplemotion_library/rs232.h
 CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o: ../src/simplemotion_library/simplemotion.h
 CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o: ../src/simplemotion_library/simplemotion_defs.h
 CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o: ../src/simplemotion_library/simplemotion_private.h

@@ -1347,8 +1347,8 @@ clean: hexapod_buffer_test/CMakeFiles/gait.dir/clean
 # Target rules for target hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir
 
 # All Build rule for target.
-hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/all: hexapod_buffer_test/CMakeFiles/ik.dir/all
 hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/all: hexapod_buffer_test/CMakeFiles/simplemotion.dir/all
+hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/all: hexapod_buffer_test/CMakeFiles/ik.dir/all
 hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/all: hexapod_buffer_test/CMakeFiles/gait.dir/all
 hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/all: hexapod_buffer_test/CMakeFiles/control.dir/all
 	$(MAKE) -f hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/build.make hexapod_buffer_test/CMakeFiles/hexapodcontrol_buffer.dir/depend
@@ -1547,8 +1547,8 @@ clean: my_hexapod_control/CMakeFiles/my_gait.dir/clean
 
 # All Build rule for target.
 my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/all: my_hexapod_control/CMakeFiles/my_ik.dir/all
-my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/all: my_hexapod_control/CMakeFiles/my_gait.dir/all
 my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/all: my_hexapod_control/CMakeFiles/my_control.dir/all
+my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/all: my_hexapod_control/CMakeFiles/my_gait.dir/all
 	$(MAKE) -f my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/build.make my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/depend
 	$(MAKE) -f my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/build.make my_hexapod_control/CMakeFiles/my_hexapod_controller.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/quan/hexapod_buffer_ws/build/CMakeFiles  11

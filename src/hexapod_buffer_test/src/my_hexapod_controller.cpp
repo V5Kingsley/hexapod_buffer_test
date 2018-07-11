@@ -23,7 +23,7 @@ int main (int argc, char **argv)
 //     control.gait.gaitCycle( control.cmd_vel_, &control.feet_); //周期步态
 //     control.ik.calculateIK( control.feet_, &control.legs_ ); //逆运动学求解关节角度
 //     control.publishJointStates( control.legs_, control.gait.cycle_period_, control.gait.cycle_leg_number_, &control.feet_); //发布关节角度话题
-      control.feedDrives();
+      control.feedDrives(control.gait.start_cycle, control.gait.cycle_period_);
     }
     else
     {

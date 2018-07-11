@@ -16,6 +16,7 @@ public:
   int cycle_period_;
   std::vector<int> cycle_leg_number_;
   geometry_msgs::Pose2D smooth_base_;
+  bool start_cycle;
 private:
   void cyclePeriod( const geometry_msgs::Pose2D &base, hexapod_msgs::FeetPositions *feet);  //每条摆动腿和支撑腿一个周期内的步幅控制
 //   geometry_msgs::Pose2D smooth_base_;

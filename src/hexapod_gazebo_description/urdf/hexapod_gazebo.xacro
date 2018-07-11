@@ -235,7 +235,7 @@
   </gazebo>
 <joint name="${leg}_pitch2" type="revolute">
   <axis xyz="0 0 1"/>
-  <limit effort="300" lower="-${M_PI/3}" upper="${M_PI/2}" velocity="1"/>
+  <limit effort="300" lower="-${M_PI/3}" upper="${M_PI*5/6}" velocity="1"/>
   <dynamics damping="${damping}"/>
   <parent link="${leg}_pitch1"/>
   <child link="${leg}_pitch2"/>

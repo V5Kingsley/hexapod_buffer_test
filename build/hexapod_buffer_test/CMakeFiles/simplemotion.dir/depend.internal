@@ -12,7 +12,6 @@ hexapod_buffer_test/CMakeFiles/simplemotion.dir/src/simplemotion_library/buffere
 hexapod_buffer_test/CMakeFiles/simplemotion.dir/src/simplemotion_library/busdevice.c.o
  /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/busdevice.c
  /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/busdevice.h
- /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/rs232.h
  /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion.h
  /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion_defs.h
  /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion_private.h

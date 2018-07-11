@@ -6,25 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/bufferedmotion.c
-simplemotion.h
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion.h
-simplemotion_private.h
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion_private.h
-bufferedmotion.h
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/bufferedmotion.h
-sm485.h
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/sm485.h
-
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/bufferedmotion.h
-simplemotion.h
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion.h
-
 /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/busdevice.h
 simplemotion.h
 /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion.h
 simplemotion_private.h
 /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion_private.h
+
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/rs232.c
+rs232.h
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/rs232.h
+simplemotion_private.h
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion_private.h
+
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/rs232.h
+stdio.h
+-
+string.h
+-
+termios.h
+-
+sys/ioctl.h
+-
+unistd.h
+-
+fcntl.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+limits.h
+-
+windows.h
+-
 
 /home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion.h
 stdio.h
@@ -42,5 +56,13 @@ busdevice.h
 stdio.h
 -
 
-/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/sm485.h
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/smtest.c
+simplemotion.h
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion.h
+stdio.h
+-
+stdlib.h
+-
+simplemotion_defs.h
+/home/quan/hexapod_buffer_ws/src/hexapod_buffer_test/src/simplemotion_library/simplemotion_defs.h
 

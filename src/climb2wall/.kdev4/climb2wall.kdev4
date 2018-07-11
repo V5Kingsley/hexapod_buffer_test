@@ -12,7 +12,7 @@ Build Type=Debug
 CMake Binary=file:///usr/bin/cmake
 Environment Profile=
 Extra Arguments=-DCATKIN_DEVEL_PREFIX=../devel -DCMAKE_INSTALL_PREFIX=../install\s
-Install Directory=
+Install Directory=file:///home/quan/hexapod_buffer_ws/src/climb2wall/install
 
 [Project]
 VersionControlSupport=kdevgit

@@ -41,7 +41,7 @@ public:
   hexapod_msgs::LegsJoints legs_; //各个关节的角度信息
   hexapod_msgs::FeetPositions feet_; //足端轨迹
   geometry_msgs::Twist cmd_vel_;
-  void feedDrives();
+  void feedDrives(const bool& start_cycle, const int& cycle_period_);
   Gait gait;
   IK ik;
 
@@ -53,6 +53,7 @@ private:
   int NUMBER_OF_LEGS;        // Number of legs
   int NUMBER_OF_LEG_JOINTS;  // Number of leg segments
   int STICK_FORCE; //吸盘吸附力大小
+  int SAMPLE_RATE;
   geometry_msgs::Twist cmd_vel_incoming_;
   int setup_;
   
@@ -82,7 +83,7 @@ private:
   ros::Publisher feet_position;
   
   //simplemotion
-  BufferedMotionAxis axis[12];
+  BufferedMotionAxis axis[24];
   smbus bushandle;
 
   

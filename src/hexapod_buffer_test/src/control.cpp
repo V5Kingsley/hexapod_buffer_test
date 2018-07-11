@@ -7,6 +7,7 @@ Control::Control()
   ros::param::get( "MASTER_LOOP_RATE", MASTER_LOOP_RATE );
    ros::param::get( "VELOCITY_DIVISION", VELOCITY_DIVISION );
    ros::param::get( "STICK_FORCE", STICK_FORCE );
+   ros::param::get("SAMPLE_RATE", SAMPLE_RATE);
    setup_ = 1;
    
    
@@ -38,7 +39,7 @@ Control::Control()
   bushandle = smOpenBus("/dev/ttyUSB0");
   if (bushandle < 0)
   {
-    ROS_INFO("open bus error");
+    ROS_FATAL("open bus error");
   }
   else
   {
@@ -46,16 +47,15 @@ Control::Control()
   }
   
   //使能电机
-  for(int i=1; i<24; i++)
+  for(int i=1; i<25; i++)
   {
-    smSetParameter(bushandle, i, SMP_CONTROL_BITS1, SMP_CB1_ENABLE);
-    smSetParameter(bushandle, i, SMP_CONTROL_BITS2, SMP_CB2_ENABLE);
+     smSetParameter(bushandle, i, SMP_CONTROL_BITS1, 33);
   }
   
   //初始化总线
-  for(int i=0; i<12; i++)
+  for(int i=0; i<24; i++)
   {
-    smBufferedInit(&axis[i], bushandle, i+1, 300, SMP_ACTUAL_POSITION_FB, SM_RETURN_VALUE_16B);
+    smBufferedInit(&axis[i], bushandle, i+1, SAMPLE_RATE, SMP_ACTUAL_POSITION_FB, SM_RETURN_VALUE_16B);
 //     smSetParameter(bushandle,i+1,SMP_DRIVE_FLAGS,axis[i].driveFlagsBeforeInit&(0xfffff7ff));
   }
  
@@ -193,10 +193,10 @@ void Control::partitionCmd_vel( geometry_msgs::Twist *cmd_vel )
     cmd_vel->angular.z = delta_th;
 }
 
-void Control::feedDrives()
+void Control::feedDrives(const bool& start_cycle, const int& cycle_period_)
 {
-  smint32 positions[12][64];
-  smint32 readData[12][64];
+  smint32 positions[24][64];
+  smint32 readData[24][64];
   smint32 readDataAmount;
   smint32 freeSpace;
   int i, j;
@@ -222,19 +222,25 @@ void Control::feedDrives()
       ik.calculateIK( feet_, &legs_ );
       publishJointStates( legs_, gait.cycle_period_, gait.cycle_leg_number_, &feet_);
       
-      for (int leg_index=0; leg_index<3; leg_index++)
+      for (int leg_index=0; leg_index<6; leg_index++)
       {
 	positions[leg_index*4][j] = round(4096*(3005640.0/1300.0)*(legs_.leg[leg_index].coxa/M_PI*360)/360.0);
 	positions[leg_index*4+1][j] = round(4096*(3005640.0/1300.0)*(-legs_.leg[leg_index].femur/M_PI*360)/360.0);
 	positions[leg_index*4+2][j] = round(4096*(3005640.0/1300.0)*(-legs_.leg[leg_index].tibia/M_PI*360)/360.0);
 	positions[leg_index*4+3][j] = round(4096*(3005640.0/1300.0)*(-legs_.leg[leg_index].tarsus/M_PI*360)/360.0);
       }
-
+      
+//       if(start_cycle == 0 && cycle_period_ == 1)
+//       {
+// 	maxpoints = j + 1;
+// 	break;
+//       }
+      
     }
     
 //send to devies, and receive read data back
   smint32 bytesFilled;
-  for(i=0; i<12; i++)
+  for(i=0; i<24; i++)
   {
     smint32 Temp;
     smAppendSMCommandToQueue(bushandle, SM_SET_WRITE_ADDRESS, SMP_TRAJ_PLANNER_VEL);
@@ -248,6 +254,11 @@ void Control::feedDrives()
   }
   
   smBufferedRunAndSyncClocks(&axis[0]);
+  
+//   if(start_cycle == 0 && cycle_period_ == 1)
+//   {
+//     ros::Duration(8.0).sleep();
+//   }
   
   
 }

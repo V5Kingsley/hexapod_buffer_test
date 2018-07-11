@@ -204,5 +204,7 @@ add_library (control SHARED src/control.cpp)
 
 add_library( simplemotion src/simplemotion_library/bufferedmotion.c src/simplemotion_library/busdevice.c src/simplemotion_library/rs232.c src/simplemotion_library/simplemotion.c src/simplemotion_library/smtest.c src/simplemotion_library/sm_consts.c)
 
+#add_library( simplemotion src/simplemotion_library/bufferedmotion.c src/simplemotion_library/busdevice.c src/simplemotion_library/devicedeployment.c src/simplemotion_library/simplemotion.c  src/simplemotion_library/sm_consts.c)
+
 add_executable( hexapodcontrol_buffer src/my_hexapod_controller.cpp)
 target_link_libraries( hexapodcontrol_buffer ${catkin_LIBRARIES} gait ik control simplemotion)
