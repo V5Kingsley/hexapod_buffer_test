@@ -111,9 +111,9 @@ void Control::publishJointStates( const hexapod_msgs::LegsJoints &legs, int &cyc
       srv.request.duration.sec = 3;
       force_client.call(srv);
     }
-  }
-    ros::Duration(1).sleep(); 
   } */
+    ros::Duration(1).sleep(); 
+  } 
     
 }
 
